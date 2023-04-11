@@ -1,0 +1,32 @@
+@import 'src/assets/styles/variables';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.profile {
+    > .count .heading {
+      color: #775f5f;
+    }
+  }
+
+  > .count {
+    width: 27%;
+    font-size: 24px;
+    text-align: center;
+    @media (max-width: $mobile) {
+      font-size: 18px;
+    }
+
+    .heading {
+      font-weight: 700;
+      color: $dark-accent;
+      text-transform: capitalize;
+    }
+    .number {
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}

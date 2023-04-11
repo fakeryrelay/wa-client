@@ -1,0 +1,66 @@
+@import 'src/assets/styles/variables';
+@import 'src/assets/styles/animations';
+
+.wrapper {
+  position: relative;
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+  }
+
+  >button {
+    font-size: 35px;
+    line-height: 1;
+
+    >svg {
+      fill: #fff;
+    }
+  }
+
+  .menu {
+    display: none;
+    min-width: 116px;
+    padding: 10px 12px;
+    
+    background-color: #fff;
+    box-shadow: $bx-16;
+    border-radius: 10px 0 10px 0;
+
+    font-size: 16px;
+
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+
+    animation: opacity 0.4s;
+
+    &.show {
+      display: block;
+    }
+
+    > ul {
+      list-style: none;
+
+      button {
+        font-size: 16px;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+
+        transition: color .2s ease;
+
+        &:hover,
+        &.active {
+          margin: 4px 0;
+          color: $accent;
+        }
+      }
+    }
+  }
+}
