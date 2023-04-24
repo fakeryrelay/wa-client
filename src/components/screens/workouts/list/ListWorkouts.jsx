@@ -17,7 +17,7 @@ export const ListWorkouts = () => {
 
 	return (
 		<>
-			<Layout bgImage='/images/workout-bg.jpg' heading='Workout list' />
+			<Layout bgImage='/images/workout-bgRed.jpg' heading='Workout list' />
 
 			<div
 				className='wrapper-inner-page'

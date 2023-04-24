@@ -10,7 +10,7 @@ export const HeaderWorkout = ({workoutLog, isSuccess}) => {
     <div
       className={cn(stylesLayout.wrapper, stylesLayout.otherPage)}
       style={{
-        backgroundImage: `url('/images/workout-bg.jpg')`,
+        backgroundImage: `url('/images/workout-bgRed.jpg')`,
         height: 356
       }}
     >
